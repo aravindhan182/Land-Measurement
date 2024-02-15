@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
+    <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
+    <!--selection controls.-->
+    <color name="color_primary">#0A6C74</color>
+    <color name="color_primary_variant">#044E54</color>
+    <color name="color_secondary">#127FBF</color>
+    <color name="color_secondary_variant">#035388</color>
+    <!--colorBackground appears behind scrollable content and is used for the default window-->
+    <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
+    <!--and menus. colorError is used to indicate an errorObject state for components such as-->
+    <!--text fields.-->
+    <color name="color_background">#eafaf1</color>
+    <color name="color_surface">#ffffff</color>
+    <color name="color_error">#b00020</color>
+
+    <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
+    <!--on which they appear.-->
+    <color name="color_on_primary">#ffffff</color>
+    <color name="color_on_secondary">#ffffff</color>
+    <color name="color_on_background">#000000</color>
+    <color name="color_on_background_night">#2c2b2b</color>
+    <color name="color_on_surface">#000000</color>
+    <color name="color_on_error">#ffffff</color>
+
+    <!--    Custom Palette-->
+    <color name="recycler_background">#eeeeee</color>
+    <color name="error_surface">#E57373</color>
+    <color name="default_text">#808080</color>
+
+    <color name="black_semi_transparent">#40000000</color>
+    <color name="light_grey">#F0F4F8</color>
+    <color name="excel_notes_background">#EC7752</color>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Land Measurement</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="unit_array">
+        <item>Square Feet</item>
+        <item>Acre</item>
+        <item>Square Meter</item>
+        <item>Square Centimeter</item>
+        <item>Hectare</item>
+        <item>Cent</item>
+    </array>
+    <string name="instruction">The land measurement application allows users to calculate and convert different units of land area, such as square meters, square feet, and acres. It provides a user-friendly interface for quick and accurate measurements, making it valuable for real estate, construction, agriculture, and related fields.</string>
+</resources>
