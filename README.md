@@ -25,12 +25,12 @@ Our user-friendly interface makes the app accessible to users of all levels. The
 The Land Measurement Calculator is built to deliver precise and accurate results. You can rely on the app for dependable calculations, ensuring that your land-related decisions are based on solid data.
 How to Use
 
-    **Select Input Unit: **Choose the unit of measurement from (e.g., Square Feet, Acre, Square Meter).
+    Select Input Unit: Choose the unit of measurement from (e.g., Square Feet, Acre, Square Meter).
 
-    **Enter Value:** Input the land area value you want to calculate or convert.
+    Enter Value: Input the land area value you want to calculate or convert.
 
-    **Select Output Unit:** Choose the unit of measurement to (e.g., Square Feet, Acre, Square Meter).
+    Select Output Unit: Choose the unit of measurement to (e.g., Square Feet, Acre, Square Meter).
 
-  **  Apply:** Get the measurement value.
+    Apply: Get the measurement value.
 
 Thank you for choosing the Land Measurement Calculator app. Happy calculating!
