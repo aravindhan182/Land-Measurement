@@ -11,6 +11,9 @@ import com.example.landmeasurement.ui.measurement.model.MutableErrorView
 import com.example.landmeasurement.ui.measurement.model.MutableUnitView
 import com.example.landmeasurement.ui.measurement.model.Units
 import com.example.landmeasurement.utils.SingleEvent
+import com.example.landmeasurement.utils.countConsecutiveZeros
+import java.math.BigDecimal
+import java.math.RoundingMode
 
 class MeasurementViewModel(app: Application) : AndroidViewModel(app) {
 
@@ -49,7 +52,9 @@ class MeasurementViewModel(app: Application) : AndroidViewModel(app) {
                     selectedUnitForOutput.value!!
                 )
                 val resultPrefix= "Result: "
-                calculationView = CalculationView("$resultPrefix${calculationView.result}",calculationView.calculationError)
+                val scale = countConsecutiveZeros(calculationView.result.toString())
+                val result = BigDecimal(calculationView.result).setScale(scale, RoundingMode.HALF_EVEN)
+                calculationView = CalculationView("$resultPrefix${result}",calculationView.calculationError)
                 _result.value = calculationView
             }
         }

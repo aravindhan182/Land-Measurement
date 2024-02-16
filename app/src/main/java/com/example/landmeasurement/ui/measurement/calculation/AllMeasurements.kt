@@ -90,7 +90,7 @@ fun allMeasurement(enterUnits: String, input: Units, output: Units): Calculation
 
         input == Units.SQUARE_METER && output == Units.SQUARE_CENTIMETER -> {
             val squareMeterToSquareCentimeter =
-                (enterUnits.toDouble() / 10000).scientificNotationToDecimal()
+                (enterUnits.toDouble() * 10000).scientificNotationToDecimal()
             CalculationView(squareMeterToSquareCentimeter, null)
         }
 
