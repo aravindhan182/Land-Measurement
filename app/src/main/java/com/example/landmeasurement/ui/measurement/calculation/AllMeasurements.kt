@@ -41,7 +41,7 @@ fun allMeasurement(enterUnits: String, input: Units, output: Units): Calculation
 
         input == Units.ACRE && output == Units.SQUARE_FEET -> {
             val acreToSquareFeet = (enterUnits.toDouble() * 43560).scientificNotationToDecimal()
-            CalculationView((enterUnits.toDouble() * 43560).toString(), null)
+            CalculationView(acreToSquareFeet, null)
         }
 
         input == Units.SQUARE_CENTIMETER && output == Units.SQUARE_FEET -> {
@@ -102,7 +102,7 @@ fun allMeasurement(enterUnits: String, input: Units, output: Units): Calculation
 
         input == Units.ACRE && output == Units.SQUARE_CENTIMETER -> {
             val acreToSquareCentimeter =
-                (enterUnits.toDouble() / 40468564).scientificNotationToDecimal()
+                (enterUnits.toDouble()*40468.5642*10000).scientificNotationToDecimal()
             CalculationView(acreToSquareCentimeter, null)
         }
 
