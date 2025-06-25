@@ -30,6 +30,9 @@ class MeasurementFragment : Fragment() {
         binding.getMeasurementButton.setOnClickListener {
             viewModel.getValue()
         }
+        viewModel.result.observe(viewLifecycleOwner,{
+            binding.result.text = it.result
+        })
         viewModel.spinnerError.observe(viewLifecycleOwner, Observer {
             it.contentIfNotHandled()?.let { errorMessage ->
                 Snackbar.make(requireView(), errorMessage, Snackbar.LENGTH_SHORT).show()

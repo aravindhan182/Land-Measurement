@@ -1,9 +1,11 @@
 package com.example.landmeasurement.ui.measurement.calculation
 
+import android.content.Context
+import com.example.landmeasurement.R
 import com.example.landmeasurement.ui.measurement.model.Units
 import com.example.landmeasurement.utils.scientificNotationToDecimal
 
-fun allMeasurement(enterUnits: String, input: Units, output: Units): CalculationView {
+fun allMeasurement(context: Context, enterUnits: String, input: Units, output: Units): CalculationView {
 
     return when {
         input == Units.SQUARE_FEET && output == Units.SQUARE_METER -> {
@@ -172,7 +174,7 @@ fun allMeasurement(enterUnits: String, input: Units, output: Units): Calculation
         }
 
         else -> {
-            CalculationView(null, "Something went wrong in calculation")
+            CalculationView(null,context.getString(R.string.something_went_wrong_in_calculation))
         }
     }
 }

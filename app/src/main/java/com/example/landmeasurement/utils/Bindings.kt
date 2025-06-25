@@ -26,7 +26,7 @@ fun setSpinnerSelectedUnit(spinner: Spinner, selectedUnit: MutableLiveData<Units
         }
 
         override fun onNothingSelected(parentView: AdapterView<*>?) {
-            // Do nothing here
+
         }
     }
 }

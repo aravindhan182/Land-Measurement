@@ -14,14 +14,14 @@ fun BigDecimal.roundOf(scale: Int): BigDecimal {
 }
 
 fun countConsecutiveZeros(value: String): Int {
-    val decimalPart = value.substringAfter(".") // Get the decimal part
+    val decimalPart = value.substringAfter(".")
     var zeroCount = 0
 
     for (char in decimalPart) {
         if (char == '0') {
             zeroCount++
         } else {
-            break // Stop counting when a non-zero digit is encountered
+            break
         }
     }
 

@@ -1,10 +1,10 @@
 package com.example.landmeasurement.ui.measurement
 
 import android.app.Application
-import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.landmeasurement.R
 import com.example.landmeasurement.ui.measurement.calculation.CalculationView
 import com.example.landmeasurement.ui.measurement.calculation.allMeasurement
 import com.example.landmeasurement.ui.measurement.model.MutableErrorView
@@ -15,7 +15,7 @@ import com.example.landmeasurement.utils.countConsecutiveZeros
 import java.math.BigDecimal
 import java.math.RoundingMode
 
-class MeasurementViewModel(app: Application) : AndroidViewModel(app) {
+class MeasurementViewModel(private val app: Application) : AndroidViewModel(app) {
 
     val selectedUnitForInput = MutableLiveData<Units>()
 
@@ -37,24 +37,27 @@ class MeasurementViewModel(app: Application) : AndroidViewModel(app) {
     fun getValue() {
         when {
             selectedUnitForInput.value == selectedUnitForOutput.value -> {
-                _spinnerError.value = SingleEvent("Select different unit for output")
+                _spinnerError.value = SingleEvent(app.getString(R.string.select_different_unit))
             }
 
             _enterUnitValue.value?.enterUnit.isNullOrEmpty() -> {
-                _enterUnitErrorView.value = MutableErrorView("Enter the unit")
+                _enterUnitErrorView.value = MutableErrorView(app.getString(R.string.enter_the_unit))
             }
 
             else -> {
 
                 var calculationView = allMeasurement(
-                    _enterUnitValue.value?.enterUnit!!,
-                    selectedUnitForInput.value!!,
-                    selectedUnitForOutput.value!!
+                    context = app,
+                    enterUnits = _enterUnitValue.value?.enterUnit!!,
+                    input = selectedUnitForInput.value!!,
+                    output = selectedUnitForOutput.value!!
                 )
-                val resultPrefix= "Result: "
+
                 val scale = countConsecutiveZeros(calculationView.result.toString())
-                val result = BigDecimal(calculationView.result).setScale(scale, RoundingMode.HALF_EVEN)
-                calculationView = CalculationView("$resultPrefix${result}",calculationView.calculationError)
+                val result =
+                    BigDecimal(calculationView.result).setScale(scale, RoundingMode.HALF_EVEN)
+                calculationView =
+                    CalculationView("Result: $result", calculationView.calculationError)
                 _result.value = calculationView
             }
         }

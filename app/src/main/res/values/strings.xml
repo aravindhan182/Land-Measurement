@@ -11,4 +11,12 @@
         <item>Cent</item>
     </array>
     <string name="instruction">The land measurement application allows users to calculate and convert different units of land area, such as square meters, square feet, and acres. It provides a user-friendly interface for quick and accurate measurements, making it valuable for real estate, construction, agriculture, and related fields.</string>
+    <string name="content_description_of_land_measurement_icon">landMeasurementIcon</string>
+    <string name="select_input_below">Select Input below:</string>
+    <string name="select_output_below">Select Output below:</string>
+    <string name="enter_the_value">Enter the value</string>
+    <string name="apply">APPLY</string>
+    <string name="something_went_wrong_in_calculation">Something went wrong in calculation</string>
+    <string name="select_different_unit">"Select different unit for output"</string>
+    <string name="enter_the_unit">"Enter the unit"</string>
 </resources>
