@@ -1,4 +1,4 @@
-package com.example.landmeasurement.utils
+package com.it.aravindhan.landmeasurement.utils
 
 open class SingleEvent<out T>(private val content: T) {
     var hasBeenHandled = false

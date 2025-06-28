@@ -1,4 +1,4 @@
-package com.example.landmeasurement
+package com.it.aravindhan.landmeasurement
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.example.landmeasurement.ui.measurement.model
+package com.it.aravindhan.landmeasurement.ui.measurement.model
 
 enum class Units {
     SQUARE_FEET,

@@ -1,9 +1,10 @@
-package com.example.landmeasurement.utils
+package com.it.aravindhan.landmeasurement.utils
 
 import java.math.BigDecimal
 import java.math.RoundingMode
 import kotlin.math.pow
 import kotlin.math.round
+import kotlin.text.iterator
 
 
 fun Double.scientificNotationToDecimal(): String {

@@ -1,4 +1,4 @@
-package com.example.landmeasurement.ui.measurement
+package com.it.aravindhan.landmeasurement.ui.measurement
 
 import android.os.Bundle
 import android.view.LayoutInflater

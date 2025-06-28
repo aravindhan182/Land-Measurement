@@ -1,4 +1,4 @@
-package com.example.landmeasurement
+package com.it.landmeasurement
 
 import org.junit.Test
 

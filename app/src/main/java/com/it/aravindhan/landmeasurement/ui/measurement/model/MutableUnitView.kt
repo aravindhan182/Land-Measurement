@@ -1,4 +1,4 @@
-package com.example.landmeasurement.ui.measurement.model
+package com.it.aravindhan.landmeasurement.ui.measurement.model
 
 data class MutableUnitView(
     var enterUnit: String? = null

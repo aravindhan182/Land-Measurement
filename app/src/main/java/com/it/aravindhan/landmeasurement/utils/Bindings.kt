@@ -1,5 +1,4 @@
-
-package com.example.landmeasurement.utils
+package com.it.aravindhan.landmeasurement.utils
 
 import android.view.View
 import android.widget.AdapterView
@@ -7,7 +6,7 @@ import android.widget.Spinner
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.MutableLiveData
 import com.example.landmeasurement.R
-import com.example.landmeasurement.ui.measurement.model.Units
+import com.it.aravindhan.landmeasurement.ui.measurement.model.Units
 
 
 @BindingAdapter("app:selectedUnit")

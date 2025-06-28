@@ -1,9 +1,9 @@
-package com.example.landmeasurement.ui.measurement.calculation
+package com.it.aravindhan.landmeasurement.ui.measurement.calculation
 
 import android.content.Context
 import com.example.landmeasurement.R
-import com.example.landmeasurement.ui.measurement.model.Units
-import com.example.landmeasurement.utils.scientificNotationToDecimal
+import com.it.aravindhan.landmeasurement.ui.measurement.model.Units
+import com.it.aravindhan.landmeasurement.utils.scientificNotationToDecimal
 
 fun allMeasurement(context: Context, enterUnits: String, input: Units, output: Units): CalculationView {
 

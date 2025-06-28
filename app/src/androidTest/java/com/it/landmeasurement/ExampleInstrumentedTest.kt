@@ -1,4 +1,4 @@
-package com.example.landmeasurement
+package com.it.landmeasurement
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,17 +1,17 @@
-package com.example.landmeasurement.ui.measurement
+package com.it.aravindhan.landmeasurement.ui.measurement
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.landmeasurement.R
-import com.example.landmeasurement.ui.measurement.calculation.CalculationView
-import com.example.landmeasurement.ui.measurement.calculation.allMeasurement
-import com.example.landmeasurement.ui.measurement.model.MutableErrorView
-import com.example.landmeasurement.ui.measurement.model.MutableUnitView
-import com.example.landmeasurement.ui.measurement.model.Units
-import com.example.landmeasurement.utils.SingleEvent
-import com.example.landmeasurement.utils.countConsecutiveZeros
+import com.it.aravindhan.landmeasurement.ui.measurement.calculation.CalculationView
+import com.it.aravindhan.landmeasurement.ui.measurement.calculation.allMeasurement
+import com.it.aravindhan.landmeasurement.ui.measurement.model.MutableErrorView
+import com.it.aravindhan.landmeasurement.ui.measurement.model.MutableUnitView
+import com.it.aravindhan.landmeasurement.ui.measurement.model.Units
+import com.it.aravindhan.landmeasurement.utils.SingleEvent
+import com.it.aravindhan.landmeasurement.utils.countConsecutiveZeros
 import java.math.BigDecimal
 import java.math.RoundingMode
 

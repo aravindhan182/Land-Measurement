@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.landmeasurement"
+    namespace = "com.it.aravindhan.landmeasurement"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.landmeasurement"
+        applicationId = "com.it.aravindhan.landmeasurement"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
