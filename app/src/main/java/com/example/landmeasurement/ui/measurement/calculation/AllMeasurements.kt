@@ -110,13 +110,13 @@ fun allMeasurement(context: Context, enterUnits: String, input: Units, output: U
 
         input == Units.HECTARE && output == Units.SQUARE_CENTIMETER -> {
             val hectareToSquareCentimeter =
-                (enterUnits.toDouble() * 10000000).scientificNotationToDecimal()
+                (enterUnits.toDouble() * 100000000).scientificNotationToDecimal()
             CalculationView(hectareToSquareCentimeter, null)
         }
 
         input == Units.CENT && output == Units.SQUARE_CENTIMETER -> {
             val centToSquareCentimeter =
-                (enterUnits.toDouble() * 404686).scientificNotationToDecimal()
+                (enterUnits.toDouble() * 404685.6).scientificNotationToDecimal()
             CalculationView(centToSquareCentimeter, null)
         }
 
@@ -148,7 +148,7 @@ fun allMeasurement(context: Context, enterUnits: String, input: Units, output: U
         }
 
         input == Units.SQUARE_METER && output == Units.CENT -> {
-            val squareMeterToCent = (enterUnits.toDouble() * 0.024).scientificNotationToDecimal()
+            val squareMeterToCent = (enterUnits.toDouble() / 40.4686).scientificNotationToDecimal()
             CalculationView(squareMeterToCent, null)
         }
 
@@ -164,7 +164,7 @@ fun allMeasurement(context: Context, enterUnits: String, input: Units, output: U
 
         input == Units.SQUARE_CENTIMETER && output == Units.CENT -> {
             val squareCentimeterToCent =
-                (enterUnits.toDouble() * 0.000002).scientificNotationToDecimal()
+                (enterUnits.toDouble() / 4046856).scientificNotationToDecimal()
             CalculationView(squareCentimeterToCent, null)
         }
 
