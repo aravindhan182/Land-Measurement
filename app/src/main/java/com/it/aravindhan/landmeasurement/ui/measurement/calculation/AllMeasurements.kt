@@ -1,7 +1,7 @@
 package com.it.aravindhan.landmeasurement.ui.measurement.calculation
 
 import android.content.Context
-import com.example.landmeasurement.R
+import com.it.aravindhan.landmeasurement.R
 import com.it.aravindhan.landmeasurement.ui.measurement.model.Units
 import com.it.aravindhan.landmeasurement.utils.scientificNotationToDecimal
 

@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import com.example.landmeasurement.databinding.FragmentMeasurementBinding
 import com.google.android.material.snackbar.Snackbar
+import com.it.aravindhan.landmeasurement.databinding.FragmentMeasurementBinding
 
 class MeasurementFragment : Fragment() {
     private lateinit var binding: FragmentMeasurementBinding

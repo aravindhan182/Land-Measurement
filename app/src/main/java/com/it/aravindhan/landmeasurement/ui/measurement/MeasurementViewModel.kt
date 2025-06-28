@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.landmeasurement.R
+import com.it.aravindhan.landmeasurement.R
 import com.it.aravindhan.landmeasurement.ui.measurement.calculation.CalculationView
 import com.it.aravindhan.landmeasurement.ui.measurement.calculation.allMeasurement
 import com.it.aravindhan.landmeasurement.ui.measurement.model.MutableErrorView

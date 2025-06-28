@@ -5,7 +5,7 @@ import android.widget.AdapterView
 import android.widget.Spinner
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.MutableLiveData
-import com.example.landmeasurement.R
+import com.it.aravindhan.landmeasurement.R
 import com.it.aravindhan.landmeasurement.ui.measurement.model.Units
 
 
@@ -20,7 +20,12 @@ fun setSpinnerSelectedUnit(spinner: Spinner, selectedUnit: MutableLiveData<Units
     }
 
     spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-        override fun onItemSelected(parentView: AdapterView<*>?, selectedItemView: View?, position: Int, id: Long) {
+        override fun onItemSelected(
+            parentView: AdapterView<*>?,
+            selectedItemView: View?,
+            position: Int,
+            id: Long
+        ) {
             selectedUnit?.value = Units.values()[position]
         }
 
